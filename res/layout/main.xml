@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="4" android:background="@drawable/gradient">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1">
+			<Button android:id="@+id/homeBtnLogin" android:text="@string/login"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="left" android:layout_marginTop="3px" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/flickroid"
+				android:scaleType="fitXY" android:adjustViewBounds="true"
+				android:layout_marginTop="10px" android:layout_gravity="center" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1">
+			<ImageButton android:id="@+id/homeBtnTakePic"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/camera" android:layout_gravity="right"
+				android:layout_marginTop="3px" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="1">
+		<ImageView android:id="@+id/homeImgSplash"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:scaleType="centerCrop" android:layout_weight="1" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:minLines="2"
+			android:id="@+id/homeTvSummary" android:textSize="5pt"
+			android:layout_weight="0" android:textStyle="italic"
+			android:layout_marginRight="2.5pt" android:layout_gravity="right" />
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_height="fill_parent" android:layout_width="fill_parent"
+		android:layout_weight="4" >
+		<Button android:id="@+id/homeBtnExplore" android:text="@string/explore"
+			android:layout_weight="1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<Button android:id="@+id/homeBtnYou" android:text="@string/you"
+			android:layout_weight="1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>
